@@ -42,6 +42,8 @@ data=pd.read_csv('50_Startups.csv',header=None)
 print(data.head())
 ~~~
 
+
+
 ~~~
 X=(data.iloc[1:, :-2].values)
 print(X)
@@ -54,6 +56,9 @@ Y1_scaled=scaler.fit_transform(y)
 print(X1_scaled)
 print(Y1_scaled)
 ~~~
+
+
+
 
 ~~~
 theta=linear_regression(X1_scaled,Y1_scaled)
